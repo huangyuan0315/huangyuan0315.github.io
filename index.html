@@ -5,7 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="title" property="og:title" content="" />
+  <meta name="description" property="og:description" content="" />
+  <script type="text/javascript">
+    const doc = document.getElementsByTagName('meta');
+    if (window.location.href.includes('test')) {
+      doc['title'].setAttribute('content', '测试博客标题');
+      doc['description'].setAttribute('content', '测试博客简介');
+    } else {
+      doc['title'].setAttribute('content', '天涯博客标题');
+      doc['description'].setAttribute('content', '天涯博客简介');
+    }
+  </script>
 </head>
 
 <body>
