@@ -5,16 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
-  <meta name="description" content="" />
+  <meta name="title" property="og:title" content="" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://huangyuan.qmzbe.top/" />
+  <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+  <meta name="description" property="og:description" content="" />
   <script type="text/javascript">
-    const docTitle = document.getElementsByTagName('title')[0];
     const doc = document.getElementsByTagName('meta');
     if (window.location.href.includes('test')) {
-      docTitle.innerText = '测试博客标题';
+      doc['title'].setAttribute('content', '测试博客标题');
       doc['description'].setAttribute('content', '测试博客简介');
     } else {
-      docTitle.innerText = '天涯博客标题';
+      doc['title'].setAttribute('content', '天涯博客标题');
       doc['description'].setAttribute('content', '天涯博客简介');
     }
   </script>
